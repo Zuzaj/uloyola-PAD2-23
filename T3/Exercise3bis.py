@@ -1,5 +1,5 @@
 class BankAccount:
-    def __init__(self, #TODO):
+    def __init__(self, account_number, holder, balance, account_type):
         self.account_number = account_number
         self.holder = holder
         self.balance = balance
@@ -30,16 +30,17 @@ class BankAccount:
         self.account_type = account_type
 
     def deposit(self, amount):
-        ## TODO
+        self.balance += amount
 
     def withdraw(self, amount):
-        ## TODO
+        self.balance -= amount
 
     def print_balance(self):
         print(f"Account Number: {self.account_number}")
         print(f"Account Holder: {self.holder}")
         print(f"Account Type: {self.account_type}")
         print(f"Current Balance: ${self.balance}")
+
 
 # Example usage of the BankAccount class:
 account = BankAccount("11111111", "John Doe", 1000.0, "Pensiones")
