@@ -33,7 +33,10 @@ class BankAccount:
         self.balance += amount
 
     def withdraw(self, amount):
-        self.balance -= amount
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("You don't have enough money")
 
     def print_balance(self):
         print(f"Account Number: {self.account_number}")
