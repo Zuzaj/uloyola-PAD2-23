@@ -1,5 +1,5 @@
 class Person:
-    def __init__(#TODO):
+    def __init__(self,name,surname,age,address,phone_number):
         self.name = name
         self.surname = surname
         self.age = age
@@ -37,7 +37,7 @@ class Person:
         self.phone_number = phone_number
 
     def print_info(self):
-        #TODO
+        print(f"Person data:\nName:{self.name}\nSurname:{self.surname}\nAge:{self.age}\nAddress:{self.address}\nPhone:{self.phone_number}")
 
 person = Person("Daniel", "M", 30, "123 Main St", "555-123-4567")
 person.print_info()
